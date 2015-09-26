@@ -97,6 +97,7 @@ function initialize()
         var teamName = vals2[i][1]
         var teamBio = vals2[i][4]
         var teamLink = vals2[i][5]
+        var teamCity = vals2[i][2]
 
         var teamLatLng = new google.maps.LatLng(lat, lng);
 
@@ -107,7 +108,7 @@ function initialize()
 
         marker = new google.maps.Marker(markerOptions)
 
-        teamInfo[i] = "Name: "+teamName+" #"+teamNumber+"<br>Bio: "+teamBio+"<br><a href=\""+teamLink+"\">"+teamLink+"</a>";
+        teamInfo[i] = "<b>"+teamName+" #"+teamNumber+"</b><br>City: "+teamCity+"<br>Bio: "+teamBio+"<br><a href=\""+teamLink+"\">"+teamLink+"</a>";
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
