@@ -15,14 +15,14 @@
         #map {
             width: 100%;
             height: 700px;
-            float: left;
+            float: center;
             margin-top: 20px;
             margin-bottom: 20px;
         }
         #form {
             width: 100%;
             height: 100%;
-            float: left;
+            float: center;
         }
     </style>
 </head>
@@ -63,9 +63,7 @@
             <h1 id="top" style="font-size:40px">Where's the Robot?</h1>
             <p class="lead">¯\_(ツ)_/¯ &nbsp;&nbsp; ᕦ( ͡° ͜ʖ ͡°)ᕤ &nbsp;&nbsp; ¯\_(ツ)_/¯</p>
             <h2 id="dateCheck"></h2>
-            <p>
-                <center>Where's the Robot is a project created by a group of freshmen at Carnegie Mellon University for HackCMU. The site will be an interactive map of FRC teams across the globe.</center>
-            </p>
+            <p><center>Where's the Robot is a project created by a group of freshmen at Carnegie Mellon University for HackCMU. The site will be an interactive map of FRC teams across the globe.</center> </p>
         </div>
 
 
@@ -99,6 +97,7 @@
                                                 </div>
                                                 <div class="ss-q-help ss-secondary-text" dir="auto">FRC teams only, please.</div>
                                             </label>
+											<br>
                                             <input type="text" name="entry.2055291832" placeholder="ex.) 1076" value="" class="ss-q-short" id="entry_2055291832" dir="auto" aria-label="What is your team number? Ex. 1076. FRC teams only please " aria-required="true" required="" title="">
                                             <div class="error-message" id="1298412098_errorMessage"></div>
                                             <div class="required-message">This is a required question</div>
@@ -114,7 +113,8 @@
                                                 <div class="ss-q-title">What is your team name?</div>
                                                 <div class="ss-q-help ss-secondary-text" dir="auto"></div>
                                             </label>
-                                            <input type="text" name="entry.433332366" value="" class="ss-q-short" id="entry_433332366" dir="auto" aria-label="What&#39;s your team name?  " title="">
+                                            <br>
+											<input type="text" name="entry.433332366" value="" class="ss-q-short" id="entry_433332366" dir="auto" aria-label="What&#39;s your team name?  " title="">
                                             <div class="error-message" id="1834871332_errorMessage"></div>
                                             <div class="required-message">This is a required question</div>
                                         </div>
@@ -132,7 +132,8 @@
                                                 </div>
                                                 <div class="ss-q-help ss-secondary-text" dir="auto"></div>
                                             </label>
-                                            <input type="text" name="entry.807580090" placeholder="City, State" value="" class="ss-q-short" id="entry_807580090" dir="auto" aria-label="Where is your team located? City, State " aria-required="true" required="" title="">
+                                            <br>
+											<input type="text" name="entry.807580090" placeholder="City, State" value="" class="ss-q-short" id="entry_807580090" dir="auto" aria-label="Where is your team located? City, State " aria-required="true" required="" title="">
                                             <div class="error-message" id="106655115_errorMessage"></div>
                                             <div class="required-message">This is a required question</div>
                                         </div>
@@ -147,7 +148,8 @@
                                                 <div class="ss-q-title">What is your team's address?</div>
                                                 <div class="ss-q-help ss-secondary-text" dir="auto"></div>
                                             </label>
-                                            <input type="text" name="entry.177410488" placeholder="ex.) 1234 Main Street" value="" class="ss-q-short" id="entry_177410488" dir="auto" aria-label="What is your teams address? For map purposes. Ex. 1234 Main Street " title="">
+                                            <br>
+											<input type="text" name="entry.177410488" placeholder="ex.) 1234 Main Street" value="" class="ss-q-short" id="entry_177410488" dir="auto" aria-label="What is your teams address? For map purposes. Ex. 1234 Main Street " title="">
                                             <div class="error-message" id="876862956_errorMessage"></div>
                                             <div class="required-message">This is a required question</div>
                                         </div>
@@ -162,7 +164,8 @@
                                                 <div class="ss-q-title">If you wish, include a 2-3 sentence blurb about your team.</div>
                                                 <div class="ss-q-help ss-secondary-text" dir="auto"></div>
                                             </label>
-                                            <textarea name="entry.1576072538" rows="8" cols="0" class="ss-q-long" id="entry_1576072538" dir="auto" aria-label="If you wish, include a 2-3 sentence blurb about your team.  "></textarea>
+                                            <br>
+											<textarea name="entry.1576072538" rows="8" cols="0" class="ss-q-long" id="entry_1576072538" dir="auto" aria-label="If you wish, include a 2-3 sentence blurb about your team.  "></textarea>
                                             <div class="error-message" id="690423373_errorMessage"></div>
                                             <div class="required-message">This is a required question</div>
                                         </div>
@@ -177,7 +180,8 @@
                                                 <div class="ss-q-title">Team photo/logo:</div>
                                                 <div class="ss-q-help ss-secondary-text" dir="auto">Attach the link to a picture of your team, robot, or logo.</div>
                                             </label>
-                                            <input type="text" name="entry.1485364234" value="" class="ss-q-short" id="entry_1485364234" dir="auto" aria-label="Team photo/logo Attach the link to a picture of your team, robot, or logo. " title="">
+                                            <br>
+											<input type="text" name="entry.1485364234" value="" class="ss-q-short" id="entry_1485364234" dir="auto" aria-label="Team photo/logo Attach the link to a picture of your team, robot, or logo. " title="">
                                             <div class="error-message" id="811895541_errorMessage"></div>
                                             <div class="required-message">This is a required question</div>
                                         </div>
@@ -189,11 +193,11 @@
                                     <div dir="auto" class="ss-item  ss-text">
                                         <div class="ss-form-entry">
                                             <label class="ss-q-item-label" for="entry_688834634">
-                                                <div class="ss-q-title">Link to team website:
-                                                </div>
-                                                <div class="ss-q-help ss-secondary-text" dir="auto">If you don't have a website feel free to add an email or social media link. </div>
+                                                <div class="ss-q-title">Link to team website:</div>
+                                                <div class="ss-q-help ss-secondary-text" dir="auto">If you don't have a website feel free to add an email or social media link.</div>
                                             </label>
-                                            <input type="text" name="entry.688834634" value="" class="ss-q-short valid" id="entry_688834634" dir="auto" aria-label="Link to team website: If you don&#39;t have a website feel free to add an email or social media link.  " title="">
+                                            <br>
+											<input type="text" name="entry.688834634" value="" class="ss-q-short valid" id="entry_688834634" dir="auto" aria-label="Link to team website: If you don&#39;t have a website feel free to add an email or social media link.  " title="">
                                             <div class="error-message" id="296249372_errorMessage"></div>
                                             <div class="required-message">This is a required question</div>
                                         </div>
@@ -208,7 +212,8 @@
                                                 <div class="ss-q-title">Where/how did you learn about this website?</div>
                                                 <div class="ss-q-help ss-secondary-text" dir="auto"></div>
                                             </label>
-                                            <textarea name="entry.1122874147" rows="8" cols="0" class="ss-q-long" id="entry_1122874147" dir="auto" aria-label="Where/how did you get the link to this form?  "></textarea>
+                                            <br>
+											<textarea name="entry.1122874147" rows="8" cols="0" class="ss-q-long" id="entry_1122874147" dir="auto" aria-label="Where/how did you get the link to this form?  "></textarea>
                                             <div class="error-message" id="1275685799_errorMessage"></div>
                                             <div class="required-message">This is a required question</div>
                                         </div>
@@ -226,12 +231,7 @@
                                         <tbody>
                                             <tr>
                                                 <td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-                                                    <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-
-                                                    <script type="text/javascript">
-                                                        H5F.setup(document.getElementById('ss-form'));
-                                                        _initFormViewer("[100,,[]\n]\n");
-                                                    </script>
+                                                    <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action btn btn-default">
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -248,7 +248,7 @@
                 <div class="results"></div> 
                 <h3 id="contact">Contact Us </h3>
                 <br>
-                <p>If you have any problems contact us at wherestherobot@gmail.com.</p>
+                <p>If you have any problems contact us at <a href="mailto://wherestherobot@gmail.com">wherestherobot@gmail.com</a>.</p>
                 <br>
                 <h3 id="about">About Us</h3>
                 <br>
@@ -256,13 +256,13 @@
                 <br>
                 <h3 id="memes">DANK MEMES </h3>
                 <br>
-                <p> These are the inspiration for this project. </p>
+                <p>These are the inspiration for this project.</p>
                 <img src="assets/original.jpg" alt="this is the meme that started it all" style="width:256px;height:256px;">
                 <img src="assets/too_much_robot.jpg" alt="it's probably not week 7 anymore" style="width:256px;height:256px;">
                 <img src="assets/almost_summer.jpg" alt="it's also probably not summer" style="width:256px;height:256px;">
                 <br>
                 <br>
-                <p> Team 1076 has the dankest memes! </p>
+                <p>Team 1076 has the dankest memes!</p>
                 <a href="#top" style="font-size:20px">Go to top ( ͡~ ͜ʖ ͡°) </a>
                 <br>
                 <br>
