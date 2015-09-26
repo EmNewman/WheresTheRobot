@@ -32,9 +32,6 @@ body {
     height: auto;
     text-align: center;
 }
-.ss-header-image-image {
-    background-image: url('//ssl.gstatic.com/docs/forms/themes/images/v1/03fe07d04441ece5cc5dab01814c81d486f9e50989ecd5e69364e8af80d1df95/theme_header_townhall.png');
-}
 .ss-header-image-sizer {
     padding-top: 24.429%;
 }
@@ -60,7 +57,7 @@ body {
 }
 .ss-form-title {
     font-family: "Roboto Condensed";
-    color: rgb(15, 170, 155);
+    color: black;
     font-weight: 400;
     font-size: 2.000rem;
     font-style: normal;
@@ -98,7 +95,7 @@ body {
 }
 .ss-q-title {
     font-family: "Roboto";
-    color: rgb(73, 186, 176);
+    color: black;
     font-weight: 700;
     font-size: 1.080rem;
     font-style: normal;
@@ -2500,7 +2497,7 @@ body::-webkit-scrollbar-corner {
 body {
     background-color: white;
     color: black;
-    font: normal 13px arial, sans-serif;
+    font-family: "Roboto";
     margin: 0
 }
 h1,
