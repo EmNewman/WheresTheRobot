@@ -17,10 +17,30 @@ $.ajax({
 
 entries = j["feed"]["entry"];
 
+vals = entries.map(
+        function (elem){
+            return elem.content["$t"].split(": ")
+        }
+    );
+console.log(vals);
+
+vals2 = [ ];
+for (i=0; i<vals.length;i++) {
+    vals2[i] = [ ]
+    for(k=1; k<vals[i].length-1;k++) {
+        vals2[i][k-1] = vals[i][k].substring(0, vals[i][k].length-6)
+    }
+}
+
+console.log(vals2);
+
+/*
 var rows = [""]
 for (i=0; i < entries.length; i++) {
     rows.push(entries[i]["content"]["$t"]);
 };
+
+console.log(typeof rows[0].split)
 
 var info = [""]
 for (i=0; i < rows.length; i++) {
@@ -36,7 +56,9 @@ for (i=0; i < rows.length; i++) {
 for (i=0; i < info.length; i++ ) {
     console.log(info[i]);
 }; */
+/*
 console.log(info);
 console.log(typeof info)
 console.log(typeof info[0]);
 console.log(typeof info[0][0]);
+*/
