@@ -2461,14 +2461,6 @@ body::-webkit-scrollbar-corner {
     border-width: 3px 0 0 3px;
     box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .14)
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    margin: 0
-}
 .g {
     color: #666
 }
@@ -2496,10 +2488,6 @@ h5 {
 }
 .form-error-arg {
     font-weight: bold
-}
-h1 {
-    font-size: 23px;
-    padding: 0
 }
 hr {
     border: 0;
