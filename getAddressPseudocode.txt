@@ -1,0 +1,13 @@
+src = https://spreadsheets.google.com/feeds/cells/13oMpK1vV_7kHJuL0Md0ja3TUsqHh5L7VPl9zTmuZfxI/1/public/basic?alt=json
+
+
+for(each entry # starting at 2 through end of src)
+	if((json.entry.id[#].title.$t).contains('D'))
+		var city = json.entry.id[#].content.$t
+	else if((json.entry.id[#].title.$t).contains('E'))
+		var address = json.entry.id[#].content.$t
+		var lat = convertLat(address, city)
+		var lng = convertLng(address, city)
+		//add lat and lng to spreadsheet at K# and L#
+	else
+		#++
