@@ -106,7 +106,7 @@ function initialize()
 
         marker = new google.maps.Marker(markerOptions)
 
-        teamInfo[i] = "Name: "+teamName+"<br>#"+teamNumber+"<br>Bio: "+teamBio+"\nWebsite: "+teamLink;
+        teamInfo[i] = "Name: "+teamName+" #"+teamNumber+"<br>Bio: "+teamBio+"<br>Website: "+teamLink;
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
