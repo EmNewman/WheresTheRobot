@@ -23,3 +23,10 @@ for (i=0; i < entries.length(); i++) {
     rows.push(entries[i]["content"]["$t"]) 
 }
 
+var info = [""]
+for (i=0; i < rows.length, i++ )
+    info.push.apply(info,(rows[i].split(":"))
+
+for (i=0; i < info.length, i++ )
+    console.log(info)
+
