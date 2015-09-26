@@ -15,19 +15,15 @@ function initialize()
 		position: pittLatLng,
 		map: map }
 
-<<<<<<< HEAD
-				var marker = new google.maps.Marker(markerOptions);
 
-				var contentString = 'pittsburgh';
+		var marker = new google.maps.Marker(markerOptions);
 
-				var infowindow = new google.maps.InfoWindow({ content: contentString });
+		var contentString = 'pittsburgh';
 
-				marker.addListener('click', function() {
-					infowindow.open(map, marker); });
-			}
-=======
-	var marker = new google.maps.Marker(markerOptions);
+		var infowindow = new google.maps.InfoWindow({ content: contentString });
+
+		marker.addListener('click', function() {
+			infowindow.open(map, marker); });
 }
->>>>>>> origin/master
 
 google.maps.event.addDomListener(window, 'load', initialize);
