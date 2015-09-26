@@ -24,10 +24,11 @@ for (i=0; i < entries.length; i++) {
 
 var info = [""]
 for (i=0; i < rows.length; i++) {
-    info.push(info,(rows[i].split(": ")));
+    info.push.apply(info,(rows[i].split(": ")));
     for(k=0; k < info[i].length; k++) {
         stringLength = info[i][k].length
-        info[i][k] = info[i][k].substring(stringLength - 6, stringLength)
+
+        //info[i][k] = info[i][k].substring(stringLength - 6, stringLength)
     }
 };
 
@@ -36,4 +37,6 @@ for (i=0; i < info.length; i++ ) {
     console.log(info[i]);
 }; */
 console.log(info);
-
+console.log(typeof info)
+console.log(typeof info[0]);
+console.log(typeof info[0][0]);
