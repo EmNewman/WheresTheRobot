@@ -27,14 +27,6 @@
 					map: map }
 
 				var marker = new google.maps.Marker(markerOptions);
-
-				var infoWindowOptions = {
-					content: 'this is pittsburgh'}
-
-				var infowindow = new google.maps.InfoWindow(infoWindowOptions);
-
-				marker.addListener('click' function() {
-					infowindow.open(map, marker); });
 			}
 
 			google.maps.event.addDomListener(window, 'load', initialize);
