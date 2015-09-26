@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <title>Navbar Static top Template</title>
-        <meta name="generator" content="Bootply" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!--[if lt IE 9]>
-            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <link href="css/styles.css" rel="stylesheet">
-        <style>
-          #map {
-          width: 400px;
-          height: 500px;
-          float: left;
-          }
-        </style>
-    </head>
-<body>
-  <div class="navbar navbar-default navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Where's the Robot?</a>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Navbar Static top Template</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- map style -->
+    <style> 
+      #map {
+      width: 600px;
+      height: 500px;
+      float: center;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Where's the Robot?</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
     </div>
-  </div>
 
 <div class="container">
   
@@ -50,27 +53,27 @@
     <h2 id="dateCheck"></h2>
     <p></p> <!--For the "It's week __!!-->
 	<p>Where's the Robot is a project created by a group of freshmen at Carnegie Mellon University for HackCMU. The site will be an interactive map of FRC teams across the globe. If your team would like to be featured on the site, please answer the following questions and send it out to any other FRC teams you know!</p>
-  <body> 
+  <p> <br>
     <a href="http://goo.gl/forms/MeJs0nKxHi" title="Register" target="_blank">Register</a>
-  </body>
+  </p>
 </div>
 
 
 <!-- I'm the worst at HTML :( -->
 <div> <!--Hopefully map will go here -->
-  <body id = "map">
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+  <p id = "map">
+    
+  </p>
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
     <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-  </body>
 </div> 
 
 <div>
   <h3 id ="about">About Us</h3>
-  <body> 
   <p> We are a group of CMU students who really like robots </p>
-  </body>
+  <a href="#top">Go to top</a>
 
 
 </div>
@@ -82,5 +85,5 @@
         <script src="js/map.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/timeChange.js"></script>
-    </body>
+</body>
 </html>
