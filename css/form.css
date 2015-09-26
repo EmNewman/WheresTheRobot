@@ -152,10 +152,7 @@ a:visited {
 a:active {
     color: rgb(252, 0, 0);
 }
-input[type='text'],
 input:not([type]),
-textarea {
-}
 .error,
 .required,
 .errorbox-bad {
@@ -2512,9 +2509,6 @@ hr {
 table {
     border-collapse: collapse
 }
-textarea {
-    font: normal 13px arial, sans-serif
-}
 br {
     display: block!important
 }
@@ -2653,7 +2647,6 @@ br {
     box-sizing: border-box;
     margin: auto;
     padding: 0px;
-	max-width: 75%;
     width: 50%;
     height: 100%;
 	float: left;
