@@ -1,5 +1,7 @@
 for()
 {
+
+
 	var lat = 
 	var lng = 
 	var teamNumber = 
@@ -11,12 +13,12 @@ for()
 
 	var markerOptions = {
 		position: teamLatLng,
-		map: map
+		map: map0
 	}
 
 	var marker = new google.maps.Marker(markerOptions);
 
-	var teamInfo = teamName <br> teamNumber <br> teamBio <br> teamLink ;
+	var teamInfo = teamName+\n+teamNumber+\n+teamBio+\n+teamLink;
 
 	var infowindow = new google.maps.InfoWindow({content: teamInfo});
 
