@@ -17,4 +17,4 @@ var difference_ms = Math.abs(date1_ms - date2_ms)
 var number_of_days = Math.ceil(difference_ms/ONE_DAY)
 var number_of_weeks = Math.ceil(number_of_days/7)
 
-document.getElementById("dateCheck").innerHTML = number_of_weeks
+document.getElementById("dateCheck").innerHTML = "It's week " + number_of_weeks + "!"
