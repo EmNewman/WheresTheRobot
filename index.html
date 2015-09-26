@@ -11,6 +11,13 @@
             <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <link href="css/styles.css" rel="stylesheet">
+        <style>
+          #map {
+          width: 400px;
+          height: 500px;
+          float: left;
+          }
+        </style>
     </head>
 <body>
   <div class="navbar navbar-default navbar-static-top">
@@ -47,13 +54,18 @@
     <a href="http://goo.gl/forms/MeJs0nKxHi" title="Register" target="_blank">Register</a>
   </body>
 </div>
+
+
 <!-- I'm the worst at HTML :( -->
 <div> <!--Hopefully map will go here -->
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-<br> <br> <br> <br> <br> <br> <br> <br> <br> 
- </div> 
+  <body id = "map">
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+  </body>
+</div> 
+
 <div>
   <h3 id ="about">About Us</h3>
   <body> 
@@ -66,6 +78,8 @@
 </div><!-- /.container -->
     <!-- script references -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="js/map.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/timeChange.js"></script>
     </body>
