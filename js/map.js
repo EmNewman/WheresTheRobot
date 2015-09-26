@@ -79,10 +79,10 @@ function initialize()
     console.log(vals2);
 
     var mapCanvas = document.getElementById('map');
-    var pittLatLng = new google.maps.LatLng(40.44, -79.98);
+    var centerLatLng = new google.maps.LatLng(39.83, -98.58);
 
     var mapOptions = {
-        center: pittLatLng,
+        center: centerLatLng,
         zoom: 5,
         mapTypeId: google.maps.MapTypeId.ROADMAP }
 
