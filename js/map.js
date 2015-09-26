@@ -79,11 +79,11 @@ function initialize()
     console.log(vals2);
 
     var mapCanvas = document.getElementById('map');
-    var pittLatLng = new google.maps.LatLng(40.44, -79.98);
+    var centerLatLng = new google.maps.LatLng(39.83, -98.58);
 
     var mapOptions = {
-        center: pittLatLng,
-        zoom: 5,
+        center: centerLatLng,
+        zoom: 4,
         mapTypeId: google.maps.MapTypeId.ROADMAP }
 
     var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -108,7 +108,7 @@ function initialize()
 
         marker = new google.maps.Marker(markerOptions)
 
-        teamInfo[i] = "<b>"+teamName+" #"+teamNumber+"</b><br>City: "+teamCity+"<br>Bio: "+teamBio+"<br><a href=\""+teamLink+"\">"+teamLink+"</a>";
+        teamInfo[i] = "<b>"+teamName+" #"+teamNumber+"</b><br>"+teamCity+"<br>"+teamBio+"<br><a href=\""+teamLink+"\">"+teamLink+"</a>";
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
