@@ -83,7 +83,7 @@ function initialize()
 
     var mapOptions = {
         center: pittLatLng,
-        zoom: 6,
+        zoom: 5,
         mapTypeId: google.maps.MapTypeId.ROADMAP }
 
     var map = new google.maps.Map(mapCanvas, mapOptions);
