@@ -7,17 +7,24 @@
     <meta name="generator" content="Bootply" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./form.css">
+
     <!--[if lt IE 9]>
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link href="css/styles.css" rel="stylesheet">
     <!-- map style -->
-    <style> 
-      #map {
-      width: 600px;
-      height: 500px;
-      float: center;
-      }
+    <style>
+		#map {
+			width: 75%;
+			height: 500px;
+			float: left;
+		}
+		#form {
+			width: 25%;
+			height: 500px;
+			float: right;
+		}
     </style>
   </head>
 
@@ -62,13 +69,184 @@
 
 <!-- I'm the worst at HTML :( -->
 <div> <!--Hopefully map will go here -->
-  <p id = "map">
-    
-  </p>
-  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+  <p id = "map"></p>
+  <div id = "form">
+  
+  
+  
+	<div class="ss-form-container">
+    <div class="ss-top-of-page">
+        <div class="ss-form-heading">
+            <h1 class="ss-form-title" dir="ltr">Enter your team!</h1>
+            <div class="ss-form-desc ss-no-ignore-whitespace" dir="ltr">If your team would like to be featured on the site, please answer the following questions. Then share this website with any other teams you know!</div>
+            <div class="ss-required-asterisk" aria-hidden="true">* Required</div>
+        </div>
+    </div>
+
+
+    <div class="ss-form">
+        <form action="https://docs.google.com/forms/d/13TVMejoPYq5Un1bn7uE_RtrvWxNEW9wudURvG5hTJHk/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+            <ol role="list" class="ss-question-list" style="padding-left: 0">
+
+
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-text">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-item-label" for="entry_2055291832">
+                                <div class="ss-q-title">What is your team number?
+                                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                    <span class="ss-required-asterisk" aria-hidden="true">*</span>
+                                </div>
+                                <div class="ss-q-help ss-secondary-text" dir="auto">FRC teams only, please.</div>
+                            </label>
+                            <input type="text" name="entry.2055291832" placeholder="ex.) 1076" value="" class="ss-q-short" id="entry_2055291832" dir="auto" aria-label="What is your team number? Ex. 1076. FRC teams only please " aria-required="true" required="" title="">
+                            <div class="error-message" id="1298412098_errorMessage"></div>
+                            <div class="required-message">This is a required question</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-item-label" for="entry_433332366">
+                                <div class="ss-q-title">What is your team name?</div>
+                                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                            </label>
+                            <input type="text" name="entry.433332366" value="" class="ss-q-short" id="entry_433332366" dir="auto" aria-label="What&#39;s your team name?  " title="">
+                            <div class="error-message" id="1834871332_errorMessage"></div>
+                            <div class="required-message">This is a required question</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-text">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-item-label" for="entry_807580090">
+                                <div class="ss-q-title">Where is your team located?
+                                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                    <span class="ss-required-asterisk" aria-hidden="true">*</span>
+                                </div>
+                                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                            </label>
+                            <input type="text" name="entry.807580090" placeholder="City, State" value="" class="ss-q-short" id="entry_807580090" dir="auto" aria-label="Where is your team located? City, State " aria-required="true" required="" title="">
+                            <div class="error-message" id="106655115_errorMessage"></div>
+                            <div class="required-message">This is a required question</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-item-label" for="entry_177410488">
+                                <div class="ss-q-title">What is your team's address?</div>
+                                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                            </label>
+                            <input type="text" name="entry.177410488" placeholder="ex.) 1234 Main Street" value="" class="ss-q-short" id="entry_177410488" dir="auto" aria-label="What is your teams address? For map purposes. Ex. 1234 Main Street " title="">
+                            <div class="error-message" id="876862956_errorMessage"></div>
+                            <div class="required-message">This is a required question</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item  ss-paragraph-text">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-item-label" for="entry_1576072538">
+                                <div class="ss-q-title">If you wish, include a 2-3 sentence blurb about your team.</div>
+                                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                            </label>
+                            <textarea name="entry.1576072538" rows="8" cols="0" class="ss-q-long" id="entry_1576072538" dir="auto" aria-label="If you wish, include a 2-3 sentence blurb about your team.  "></textarea>
+                            <div class="error-message" id="690423373_errorMessage"></div>
+                            <div class="required-message">This is a required question</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-item-label" for="entry_1485364234">
+                                <div class="ss-q-title">Team photo/logo:</div>
+                                <div class="ss-q-help ss-secondary-text" dir="auto">Attach the link to a picture of your team, robot, or logo.</div>
+                            </label>
+                            <input type="text" name="entry.1485364234" value="" class="ss-q-short" id="entry_1485364234" dir="auto" aria-label="Team photo/logo Attach the link to a picture of your team, robot, or logo. " title="">
+                            <div class="error-message" id="811895541_errorMessage"></div>
+                            <div class="required-message">This is a required question</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-item-label" for="entry_688834634">
+                                <div class="ss-q-title">Link to team website:
+                                </div>
+                                <div class="ss-q-help ss-secondary-text" dir="auto">If you don't have a website feel free to add an email or social media link. </div>
+                            </label>
+                            <input type="text" name="entry.688834634" value="" class="ss-q-short valid" id="entry_688834634" dir="auto" aria-label="Link to team website: If you don&#39;t have a website feel free to add an email or social media link.  " title="">
+                            <div class="error-message" id="296249372_errorMessage"></div>
+                            <div class="required-message">This is a required question</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item  ss-paragraph-text">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-item-label" for="entry_1122874147">
+                                <div class="ss-q-title">Where/how did you learn about this website?</div>
+                                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                            </label>
+                            <textarea name="entry.1122874147" rows="8" cols="0" class="ss-q-long" id="entry_1122874147" dir="auto" aria-label="Where/how did you get the link to this form?  "></textarea>
+                            <div class="error-message" id="1275685799_errorMessage"></div>
+                            <div class="required-message">This is a required question</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <input type="hidden" name="draftResponse" value="[,,&quot;6235572136783135226&quot;]">
+                <input type="hidden" name="pageHistory" value="0">
+                <input type="hidden" name="fvv" value="0">
+                <input type="hidden" name="fbzx" value="6235572136783135226">
+
+                <div class="ss-item ss-navigate">
+                    <table id="navigation-table">
+                        <tbody>
+                            <tr>
+                                <td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                                    <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+
+                                    <script type="text/javascript">
+                                        H5F.setup(document.getElementById('ss-form'));
+                                        _initFormViewer("[100,,[]\n]\n");
+                                    </script>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+                </div>
+			</ol>
+		</form>
+    </div>
+</div>
+</body>
+  
+  
+  
+  </div>
+
 </div> 
 
 <div>
