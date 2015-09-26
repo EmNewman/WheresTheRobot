@@ -1,3 +1,9 @@
+/**
+* This is how our map works!
+* Uses the Google Maps API.
+* Mostly done by Bridget
+**/
+
 //map!!!!
 function initialize() 
 {
