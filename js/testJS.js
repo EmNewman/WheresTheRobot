@@ -22,7 +22,7 @@ vals = entries.map(
             return elem.content["$t"].split(": ")
         }
     );
-console.log(vals);
+//console.log(vals);
 
 vals2 = [ ];
 for (i=0; i<vals.length;i++) {
@@ -32,33 +32,4 @@ for (i=0; i<vals.length;i++) {
     }
 }
 
-console.log(vals2);
-
-/*
-var rows = [""]
-for (i=0; i < entries.length; i++) {
-    rows.push(entries[i]["content"]["$t"]);
-};
-
-console.log(typeof rows[0].split)
-
-var info = [""]
-for (i=0; i < rows.length; i++) {
-    info.push.apply(info,(rows[i].split(": ")));
-    for(k=0; k < info[i].length; k++) {
-        stringLength = info[i][k].length
-
-        //info[i][k] = info[i][k].substring(stringLength - 6, stringLength)
-    }
-};
-
-/*
-for (i=0; i < info.length; i++ ) {
-    console.log(info[i]);
-}; */
-/*
-console.log(info);
-console.log(typeof info)
-console.log(typeof info[0]);
-console.log(typeof info[0][0]);
-*/
+//console.log(vals2);
