@@ -5,15 +5,21 @@ var spreadsheetID = "13oMpK1vV_7kHJuL0Md0ja3TUsqHh5L7VPl9zTmuZfxI";
 var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/basic?alt=json";
 //https://docs.google.com/spreadsheets/d/13oMpK1vV_7kHJuL0Md0ja3TUsqHh5L7VPl9zTmuZfxI/edit?usp=sharing
 
+var j = [];
 
-$.getJSON(url, function(data) {
-
-    var entry = data.feed.entry;
-
-    $(entry).each(function(){
-        // Column names are name, age, etc.
-        $('.results').prepend('<h2>'+this.gsx$name.$t+'</h2><p>'+this.gsx$age.$t+'</p>');
-    });
-
+$.ajax({
+  type: 'GET',
+  url: url,
+  dataType: 'json',
+  success: function(data) { j = data;},
+  async: false
 });
- 
+
+entries = j["feed"]["entry"];
+firstRow = entries[0]["content"]["$t"]
+
+var rows = [""]
+for (i=0; i < entries.length(); i++) {
+    rows.push(entries[i]["content"]["$t"]) 
+}
+
