@@ -16,17 +16,24 @@ $.ajax({
 });
 
 entries = j["feed"]["entry"];
-firstRow = entries[0]["content"]["$t"]
 
 var rows = [""]
-for (i=0; i < entries.length(); i++) {
-    rows.push(entries[i]["content"]["$t"]) 
-}
+for (i=0; i < entries.length; i++) {
+    rows.push(entries[i]["content"]["$t"]);
+};
 
 var info = [""]
-for (i=0; i < rows.length, i++ )
-    info.push.apply(info,(rows[i].split(":"))
+for (i=0; i < rows.length; i++) {
+    info.push(info,(rows[i].split(": ")));
+    for(k=0; k < info[i].length; k++) {
+        stringLength = info[i][k].length
+        info[i][k] = info[i][k].substring(stringLength - 6, stringLength)
+    }
+};
 
-for (i=0; i < info.length, i++ )
-    console.log(info)
+/*
+for (i=0; i < info.length; i++ ) {
+    console.log(info[i]);
+}; */
+console.log(info);
 
