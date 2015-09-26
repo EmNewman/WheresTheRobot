@@ -63,7 +63,7 @@ function initialize()
                 return elem.content["$t"].split(": ")
             }
         );
-
+    console.log(vals);
     vals2 = [ ];
     for (i=0; i<vals.length;i++) {
         vals2[i] = [ ]
@@ -76,13 +76,14 @@ function initialize()
             }
         }
     }
+    console.log(vals2);
 
     var mapCanvas = document.getElementById('map');
     var pittLatLng = new google.maps.LatLng(40.44, -79.98);
 
     var mapOptions = {
         center: pittLatLng,
-        zoom: 6,
+        zoom: 5,
         mapTypeId: google.maps.MapTypeId.ROADMAP }
 
     var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -96,6 +97,7 @@ function initialize()
         var teamName = vals2[i][1]
         var teamBio = vals2[i][4]
         var teamLink = vals2[i][5]
+        var teamCity = vals2[i][2]
 
         var teamLatLng = new google.maps.LatLng(lat, lng);
 
@@ -106,7 +108,7 @@ function initialize()
 
         marker = new google.maps.Marker(markerOptions)
 
-        teamInfo[i] = "Name: "+teamName+" #"+teamNumber+"<br>Bio: "+teamBio+"<br>Website: "+teamLink;
+        teamInfo[i] = "<b>"+teamName+" #"+teamNumber+"</b><br>City: "+teamCity+"<br>Bio: "+teamBio+"<br><a href=\""+teamLink+"\">"+teamLink+"</a>";
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {

@@ -9,32 +9,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/form.css">
-	<link rel="shortcut icon" href="assets/icon.png">
+    <link rel="shortcut icon" href="assets/icon.png">
 
     <!-- map style -->
     <style>
         #map {
             width: 100%;
             height: 700px;
-            float: center;
             margin-top: 30px;
             margin-bottom: 30px;
         }
-		#info {
-			float: right;
-			width: 50%;
-			padding-left: 20px;
-		}
-		#footer{
-			font-size: 20px;
-			float: right;
-			width: 100%;
-			height: 100%;
-			text-align: center;
-			margin: 20px;
-		}
+        #info {
+            float: right;
+            width: 50%;
+            padding-left: 20px;
+        }
+        #footer {
+            font-size: 20px;
+            float: right;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin: 20px;
+        }
     </style>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 
@@ -53,14 +52,16 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a>
                     </li>
+					<li><a href="#about">About</a>
+                    </li>
+					<li><a href="#memes">Memes</a>
+                    </li>
                     <li><a href="#contact">Contact</a>
                     </li>
-                    <li><a href="#memes">Memes</a>
-                    </li>
+                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">About</a>
-                    </li>
+                    
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -74,7 +75,7 @@
             <p class="lead">¯\_(ツ)_/¯ &nbsp;&nbsp; ᕦ( ͡° ͜ʖ ͡°)ᕤ &nbsp;&nbsp; ¯\_(ツ)_/¯</p>
             <h2 id="dateCheck"></h2>
             <p>
-                <center>Where's the Robot is a project created by a group of freshmen at Carnegie Mellon University for HackCMU. The site will be an interactive map of FRC teams across the globe.</center>
+                <center>Where's the Robot is a project created by a group of freshmen at Carnegie Mellon University for HackCMU. It is a networking site for FIRST Robotics Competition (FRC) teams across the globe. Click on pins on the map to find other FRC teams, and fill out the form below to join. Happy Roboting!</center>
             </p>
         </div>
 
@@ -205,7 +206,7 @@
                                     <div class="ss-form-entry">
                                         <label class="ss-q-item-label" for="entry_688834634">
                                             <div class="ss-q-title">Link to team website:</div>
-                                            <div class="ss-q-help ss-secondary-text" dir="auto">If you don't have a website feel free to add an email or social media link.</div>
+                                            <div class="ss-q-help ss-secondary-text" dir="auto">If you don't have a website feel free to add an email or social media link. Please use http:// </div>
                                         </label>
                                         <br>
                                         <input type="text" name="entry.688834634" value="" class="ss-q-short valid" id="entry_688834634" dir="auto" aria-label="Link to team website: If you don&#39;t have a website feel free to add an email or social media link.  " title="">
@@ -254,28 +255,28 @@
             </div>
 
             <div id="info">
-                <h3>Test</h3>
-                <div class="results"></div> 
-                <h3 id="contact">Contact Us </h3>
-                <p>If you have any problems contact us at <a href="mailto://wherestherobot@gmail.com">wherestherobot@gmail.com</a>.</p>
+
                 <h3 id="about">About Us</h3>
                 <p>We are Emily Newman, Bridget Soderna, Sandy Sun, and Ian Holst, four CMU students with a penchant for robots and dank memes.</p>
+				
+                <h3>The Story</h3>
+                <p>Once upon a time there was an FRC team known as Team #1076, the Pi Hi Samurai. When FIRST's 2015 competition, Recycle Rush, was announced, this team was excited to finally prove themselves as hard-working and competitive. Come Week 6, however, they did not have a working robot. One aspiring student took it upon himself to craft an image of another student with the Impact Font caption, "Where's the Robot/It's Week 6." Thus was born a new meme. This meme was plastered everywhere around the walls of the Samurai build room, and became slightly famous within the high school that 1076 was based in. Eventually, another student on the team graduated and went to Carnegie Mellon for college. Once there, she told this tale to a fellow FRC alum. Both had a sudden epiphany: hey, this might actually be a good idea for a website! Soon after, "Where's the Robot" was born.</p>
+				
                 <h3 id="memes">DANK MEMES </h3>
-                <p>These are the inspiration for this project.</p>
-                <img src="assets/original.jpg" alt="this is the meme that started it all" style="width:256px;height:256px;">
-				<br><br>
-                <img src="assets/too_much_robot.JPG" alt="it's probably not week 7 anymore" style="width:256px;height:256px;">
-				<br><br>
-                <img src="assets/almost_summer.jpg" alt="it's also probably not summer" style="width:256px;height:256px;">
-                <br><br>
-                <p>Team 1076 has the dankest memes!</p>
-			</div>
-			
-			<div id="footer">
-				<a href="#top">Go to top ( ͡~ ͜ʖ ͡°) </a>
-			</div>
-		</div>
-	</div>
+                <p>These memes are the inspiration for this project.</p>
+                <img src="assets/original.jpg" alt="this is the meme that started it all" style="width:256px;height:256px;margin:5px">
+                <img src="assets/too_much_robot.JPG" alt="it's probably not week 7 anymore" style="width:256px;height:256px;margin:5x">
+                <img src="assets/almost_summer.jpg" alt="it's also probably not summer" style="width:256px;height:256px;margin:5px">
+
+                <h3 id="contact">Contact Us </h3>
+                <p>If you have any problems contact us at <a href="mailto://wherestherobot@gmail.com">wherestherobot@gmail.com</a>.</p>
+            </div>
+
+            <div id="footer">
+                <a href="#top">Go to top ( ͡~ ͜ʖ ͡°) </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 
