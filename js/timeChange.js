@@ -3,7 +3,7 @@
 * http://stackoverflow.com/questions/2627473/how-to-calculate-the-number-of-days-between-two-dates-using-javascript
 * ed. Emily
 **/
-date1 = new Date("January 3 2015");
+date1 = new Date("January 9 2016");
 date2 = new Date();
 
 // The number of milliseconds in one day
